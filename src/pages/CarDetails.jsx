@@ -39,7 +39,7 @@ function CarDetails() {
             <img
               src={car.images[currentImageIndex]}
               alt={`${car.brand} ${car.model}`}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover md:object-contain"
             />
           </div>
           <div className="flex space-x-4 overflow-x-auto pb-4">
