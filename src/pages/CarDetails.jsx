@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 import { cars } from '../data/cars';
 import { useState } from 'react';
 import { FaWhatsapp, FaTimes, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import SEO from '../components/SEO';
 
 function CarDetails() {
   const { id } = useParams();
@@ -30,6 +31,7 @@ function CarDetails() {
 
   return (
     <div className="pt-24 bg-cream min-h-screen">
+      <SEO title={car.brand + ' ' + car.model} description={car.description} name="Car Details" type="website" />
       <div className="max-w-screen-xl mx-auto px-6 py-16">
         <h1 className="text-5xl font-light mb-16">{car.brand} {car.model}</h1>
         

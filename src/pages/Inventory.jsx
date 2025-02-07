@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react';
 import { cars } from '../data/cars';
 import CarCard from '../components/CarCard';
+import SEO from '../components/SEO';
 
 function Inventory() {
   const [selectedBrand, setSelectedBrand] = useState('all');
@@ -29,6 +30,7 @@ function Inventory() {
 
   return (
     <div className="max-w-screen-xl mx-auto pt-32 pb-16 px-6">
+      <SEO title="Inventory" description="Luxury Cars Inventory" name="Inventory" type="website" />
       <h1 className="text-5xl font-light mb-16">Our Collection</h1>
       
       {/* Filters */}

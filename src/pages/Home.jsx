@@ -1,8 +1,10 @@
 import { FaCar, FaTools, FaMoneyBillWave } from 'react-icons/fa';
+import SEO from '../components/SEO';
 
 function Home() {
   return (
     <div className="bg-cream min-h-screen pt-24">
+      <SEO title="Home" description="Luxury Cars Home" name="Home" type="website" />
       {/* Hero Section */}
       <div className="relative h-[90vh] overflow-hidden">
         <img
